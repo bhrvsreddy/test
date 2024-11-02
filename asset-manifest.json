@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/test/static/css/main.6c2396d3.css",
+    "main.js": "/test/static/js/main.fe1125f5.js",
+    "static/js/453.8d7cb6ec.chunk.js": "/test/static/js/453.8d7cb6ec.chunk.js",
+    "static/media/Ibrahem--RabbitBlack.svg": "/test/static/media/Ibrahem--RabbitBlack.a840d3ea53db2c7e90c9.svg",
+    "index.html": "/test/index.html",
+    "main.6c2396d3.css.map": "/test/static/css/main.6c2396d3.css.map",
+    "main.fe1125f5.js.map": "/test/static/js/main.fe1125f5.js.map",
+    "453.8d7cb6ec.chunk.js.map": "/test/static/js/453.8d7cb6ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c2396d3.css",
+    "static/js/main.fe1125f5.js"
+  ]
+}
