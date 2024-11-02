@@ -1,0 +1,56 @@
+.premium-brands-container {
+  text-align: center;
+  padding: 40px 20px; /* Added padding for better spacing */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.section-title {
+  font-size: 2rem; /* Increased font size for emphasis */
+  margin-bottom: 30px;
+  color: #f57b18; /* Brand color */
+  font-weight: bold;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Flexible grid columns */
+  gap: 20px; /* Consistent space between boxes */
+  justify-content: center; /* Center items in the grid */
+  align-items: center;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  width: 120px; /* Fixed width for uniformity */
+  height: 120px; /* Fixed height for uniformity */
+}
+
+.brand-item img {
+  width: 80%; /* Set width to 80% of the container */
+  height: 80%; /* Set height to 80% of the container */
+  object-fit: contain; /* Keeps aspect ratio of logos */
+}
+
+.brand-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .brand-grid {
+      grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-grid {
+    grid-template-columns: repeat(2, 1fr); /* Stack logos on very small screens */
+  }
+}

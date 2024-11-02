@@ -1,0 +1,234 @@
+/* Global styles */
+.user-profile * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user-profile {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.user-profile main {
+    display: flex;
+    max-width: 1200px;
+    margin-top: 30px;
+    padding-left: 180px;
+    width: 100%;
+}
+
+.user-profile aside {
+    width: 300px;
+    padding-right: 40px;
+    position: relative;
+    margin-left: -20px;
+    background-color: #17292e;
+    border-radius: 12px;
+    color: white;
+    padding: 20px;
+}
+
+.user-profile aside h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.user-profile aside p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.user-profile aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.user-profile aside ul li {
+    padding: 12px 0;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile aside ul li.active {
+    color: #f57b18;
+    font-weight: bold;
+}
+
+.user-profile aside ul li:hover {
+    color: #f57b18;
+}
+
+.user-profile .profile-content {
+    flex-grow: 1;
+    padding-left: 30px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.user-profile .sign-out {
+    background-color: #f57b18;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float: right;
+    margin-top: -40px;
+    border-radius: 5px;
+}
+
+.user-profile .sign-out:hover {
+    background-color: #e66916;
+}
+
+.user-profile h2 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.user-profile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.user-profile .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.user-profile .info-item {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-profile .info-item h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.user-profile .info-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-profile button {
+    margin-top: 40px;
+    padding: 12px 20px;
+    background-color: #f57b18;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.user-profile button:hover {
+    background-color: #e66916;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    /* Stack sidebar and main content vertically on mobile */
+    .user-profile {
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100vw; /*adjust content to cover entire page on mobile displays*/
+    }
+
+    /* Adjust main container layout for mobile */
+    .user-profile main {
+        flex-direction: column;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    /* Sidebar adjustments for mobile */
+    .user-profile aside {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .user-profile aside ul {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .user-profile aside ul li {
+        flex: 1;
+        text-align: center;
+        font-size: 14px;
+        justify-content: space-around;
+    }
+
+    .user-profile aside h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .user-profile aside p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Profile content adjustments */
+    .user-profile .profile-content {
+        padding: 20px;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #f4f7f6; /* Use the same background as the page for seamless look */
+    }
+
+    .user-profile h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .user-profile .sign-out {
+        margin-top: 10px;
+        float: none;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .user-profile .info-grid {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+
+    /* Adjust font sizes */
+    .user-profile h2 {
+        font-size: 20px;
+    }
+
+    .user-profile p, .user-profile .info-item h4 {
+        font-size: 14px;
+    }
+
+    /* Button adjustments */
+    .user-profile button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}

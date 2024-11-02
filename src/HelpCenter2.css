@@ -1,0 +1,108 @@
+.help-center-wrapper {
+  padding: 40px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  color: #f57b18;
+  text-align: center;
+}
+
+.timeline-heading {
+  font-size: 32px;
+  margin-bottom: 1px;
+  margin-top: 20px;
+  color: #f57b18;
+  text-align: center;
+}
+
+.featured-articles-section {
+  margin-bottom: 50px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.article-card {
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+}
+
+.article-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.article-title {
+  padding: 15px;
+  font-size: 18px;
+  color: #f57b18;
+  text-align: center;
+}
+
+.timeline-section {
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.contact-section svg {
+  margin-right: 10px;
+}
+
+/* Navigation Arrows */
+.navigation-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f57b18; /* Adjust color as needed */
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.arrow-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.arrow-button:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+}

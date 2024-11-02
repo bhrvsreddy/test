@@ -1,0 +1,68 @@
+.car-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.car-image {
+    width: 50%; /* Default for larger screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.car-content {
+    width: 45%; /* Default for larger screens */
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.get-started-button {
+    background-color: #f57b18;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+    .car-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .car-image, .car-content {
+        width: 100%;
+        margin: 0; /* Remove any side margin */
+    }
+
+    .car-content {
+        text-align: center; /* Center text for better mobile alignment */
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .car-content h1 {
+        font-size: 20px;
+    }
+
+    .car-content p {
+        font-size: 14px;
+    }
+}
